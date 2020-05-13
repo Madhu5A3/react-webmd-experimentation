@@ -13,6 +13,9 @@ const Navbar = () => {
                     <li>
                         <Link to="/useEffect">uSeEffect Component</Link>
                     </li>
+                    <li>
+                        <Link to="/useLocation">useLocation Component</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
