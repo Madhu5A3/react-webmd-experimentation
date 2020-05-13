@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
 const UseEffect = (props) => {
 
@@ -13,6 +13,10 @@ const UseEffect = (props) => {
     const handleClick = () =>{
         history.push("/");
     }
+
+    let location = useLocation();
+
+    // console.log(location.pathname)
     return (
         <div className="useeffect">
             <p>use effect hook: {count}</p>
