@@ -4,11 +4,12 @@ import UseEffect from './components/UseEffect';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import EmotionExperimentation from './components/EmotionExperimentation';
-
+import Button from './components/button/Button';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Button label="CLICK"/>
         <Navbar />
         <Switch>
           <Route exact path="/" component={HookComponent}></Route>
